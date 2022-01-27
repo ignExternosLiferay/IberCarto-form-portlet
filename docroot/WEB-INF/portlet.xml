@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
+	<portlet>
+		<portlet-name>1</portlet-name>
+		<display-name>Web Form</display-name>
+		<portlet-class>com.liferay.webform.portlet.WebFormPortlet</portlet-class>
+		<init-param>
+			<name>copy-request-parameters</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>view-template</name>
+			<value>/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+		</supports>
+		<resource-bundle>content.Language</resource-bundle>
+		<portlet-info>
+			<title>Formulario inscripcion</title>
+			<short-title>Formulario inscripcion</short-title>
+			<keywords>Formulario inscripcion</keywords>
+		</portlet-info>
+		<portlet-preferences>
+			<preference>
+				<name>description</name>
+				<value>La inscripción en el Encuentro es libre y gratuita, solo está limitada por el aforo de la sala en la que se celebra.</value>
+			</preference>
+			<preference>
+				<name>saveToDatabase</name>
+				<value>true</value>
+			</preference>
+			<preference>
+				<name>sendMailUser</name>
+				<value>true</value>
+			</preference>
+			<preference>
+				<name>subject</name>
+				<value>Inscripcion al X encuentro IBERCARTO</value>
+			</preference>
+			<preference>
+				<name>emailFromName</name>
+				<value>Ibercarto</value>
+			</preference>
+			<preference>
+				<name>emailFromAddress</name>
+				<value>ibercarto@mitma.es</value>
+			</preference>
+			<preference>
+				<name>title</name>
+				<value>Inscripcion al X encuentro IBERCARTO</value>
+			</preference>
+<!-- campos -->
+<!-- Datos personales -->
+			<preference>
+				<name>fieldLabel1</name>
+				<value>Nombre (*)</value>
+			</preference>
+			<preference>
+				<name>fieldLabel1_en_US</name>
+				<value>Nombre (*)</value>
+			</preference>
+			<preference>
+				<name>fieldType1</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional1</name>
+				<value>false</value>
+			</preference>
+			<preference>
+				<name>fieldLabel2</name>
+				<value>Apellidos (*)</value>
+			</preference>
+			<preference>
+				<name>fieldLabel2_en_US</name>
+				<value>Apellidos (*)</value>
+			</preference>
+			<preference>
+				<name>fieldType2</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional2</name>
+				<value>false</value>
+			</preference>
+			<preference>
+				<name>fieldLabel3</name>
+				<value>DNI/Pasaporte</value>
+			</preference>
+			<preference>
+				<name>fieldLabel3_en_US</name>
+				<value>DNI/Pasaporte</value>
+			</preference>
+			<preference>
+				<name>fieldType3</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional3</name>
+				<value>true</value>
+			</preference>
+			<preference>
+				<name>fieldLabel4</name>
+				<value>Dirección</value>
+			</preference>
+			<preference>
+				<name>fieldLabel4_en_US</name>
+				<value>Dirección</value>
+			</preference>
+			<preference>
+				<name>fieldType4</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional4</name>
+				<value>true</value>
+			</preference>
+			<preference>
+				<name>fieldLabel5</name>
+				<value>Código Postal</value>
+			</preference>
+			<preference>
+				<name>fieldLabel5_en_US</name>
+				<value>Código Postal</value>
+			</preference>
+			<preference>
+				<name>fieldType5</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional5</name>
+				<value>true</value>
+			</preference>
+			<preference>
+				<name>fieldLabel6</name>
+				<value>Población</value>
+			</preference>
+			<preference>
+				<name>fieldLabel6_en_US</name>
+				<value>Población</value>
+			</preference>
+			<preference>
+				<name>fieldType6</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional6</name>
+				<value>true</value>
+			</preference>
+			<preference>
+				<name>fieldLabel7</name>
+				<value>Provincia</value>
+			</preference>
+			<preference>
+				<name>fieldLabel7_en_US</name>
+				<value>Provincia</value>
+			</preference>
+			<preference>
+				<name>fieldType7</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional7</name>
+				<value>true</value>
+			</preference>
+			<preference>
+				<name>fieldLabel8</name>
+				<value>País</value>
+			</preference>
+			<preference>
+				<name>fieldLabel8_en_US</name>
+				<value>País</value>
+			</preference>
+			<preference>
+				<name>fieldType8</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional8</name>
+				<value>true</value>
+			</preference>
+			<preference>
+				<name>fieldLabel9</name>
+				<value>Teléfono de contacto</value>
+			</preference>
+			<preference>
+				<name>fieldLabel9_en_US</name>
+				<value>Teléfono de contacto</value>
+			</preference>
+			<preference>
+				<name>fieldType9</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional9</name>
+				<value>true</value>
+			</preference>
+			<preference>
+				<name>fieldLabel10</name>
+				<value>Correo electrónico (*)</value>
+			</preference>
+			<preference>
+				<name>fieldLabel10_en_US</name>
+				<value>Correo electrónico (*)</value>
+			</preference>
+			<preference>
+				<name>fieldType10</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional10</name>
+				<value>false</value>
+			</preference>			
+<!-- Datos profesionales -->
+			<preference>
+				<name>fieldLabel11</name>
+				<value>Empresa o Institución</value>
+			</preference>
+			<preference>
+				<name>fieldLabel11_en_US</name>
+				<value>Empresa o Institución</value>
+			</preference>
+			<preference>
+				<name>fieldType11</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional11</name>
+				<value>true</value>
+			</preference>			
+			<preference>
+				<name>fieldLabel12</name>
+				<value>Puesto que desempeña</value>
+			</preference>
+			<preference>
+				<name>fieldLabel12_en_US</name>
+				<value>Puesto que desempeña</value>
+			</preference>
+			<preference>
+				<name>fieldType12</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional12</name>
+				<value>true</value>
+			</preference>			
+<!-- Datos estudiantes -->
+			<preference>
+				<name>fieldLabel13</name>
+				<value>Estudios de Licenciatura o Grado</value>
+			</preference>
+			<preference>
+				<name>fieldLabel13_en_US</name>
+				<value>Estudios de Licenciatura o Grado</value>
+			</preference>
+			<preference>
+				<name>fieldType13</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional13</name>
+				<value>true</value>
+			</preference>			
+			<preference>
+				<name>fieldLabel14</name>
+				<value>Estudios de Máster o Postgrado</value>
+			</preference>
+			<preference>
+				<name>fieldLabel14_en_US</name>
+				<value>Estudios de Máster o Postgrado</value>
+			</preference>
+			<preference>
+				<name>fieldType14</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional14</name>
+				<value>true</value>
+			</preference>				
+			<preference>
+				<name>fieldLabel15</name>
+				<value>Institución académica donde los cursa</value>
+			</preference>
+			<preference>
+				<name>fieldLabel15_en_US</name>
+				<value>Institución académica donde los cursa</value>
+			</preference>
+			<preference>
+				<name>fieldType15</name>
+				<value>text</value>
+			</preference>
+			<preference>
+				<name>fieldOptional15</name>
+				<value>true</value>
+			</preference>				
+		</portlet-preferences>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+</portlet-app>
